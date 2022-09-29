@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A76EB37A28E3CA500029A5BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EB37928E3CA500029A5BD /* AppDelegate.swift */; };
+		A76EB37C28E3CA500029A5BD /* TerminalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EB37B28E3CA500029A5BD /* TerminalVC.swift */; };
+		A76EB37E28E3CA510029A5BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76EB37D28E3CA510029A5BD /* Assets.xcassets */; };
+		A76EB38128E3CA510029A5BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76EB37F28E3CA510029A5BD /* Main.storyboard */; };
+		A76EB38C28E3CA510029A5BD /* zTermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EB38B28E3CA510029A5BD /* zTermTests.swift */; };
+		A76EB39628E3CA510029A5BD /* zTermUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EB39528E3CA510029A5BD /* zTermUITests.swift */; };
+		A76EB39828E3CA510029A5BD /* zTermUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EB39728E3CA510029A5BD /* zTermUITestsLaunchTests.swift */; };
+		A76EB3A628E3CA900029A5BD /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = A76EB3A528E3CA900029A5BD /* SwiftTerm */; };
+		A76EB3A828E3CA900029A5BD /* SwiftTermFuzz in Frameworks */ = {isa = PBXBuildFile; productRef = A76EB3A728E3CA900029A5BD /* SwiftTermFuzz */; };
+		A76EB3B228E3E0C40029A5BD /* Terminal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76EB3B028E3E0C40029A5BD /* Terminal.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A76EB38828E3CA510029A5BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76EB36E28E3CA500029A5BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76EB37528E3CA500029A5BD;
+			remoteInfo = zTerm;
+		};
+		A76EB39228E3CA510029A5BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76EB36E28E3CA500029A5BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76EB37528E3CA500029A5BD;
+			remoteInfo = zTerm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A76EB37628E3CA500029A5BD /* zTerm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zTerm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76EB37928E3CA500029A5BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A76EB37B28E3CA500029A5BD /* TerminalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalVC.swift; sourceTree = "<group>"; };
+		A76EB37D28E3CA510029A5BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A76EB38028E3CA510029A5BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A76EB38228E3CA510029A5BD /* zTerm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = zTerm.entitlements; sourceTree = "<group>"; };
+		A76EB38728E3CA510029A5BD /* zTermTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zTermTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76EB38B28E3CA510029A5BD /* zTermTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zTermTests.swift; sourceTree = "<group>"; };
+		A76EB39128E3CA510029A5BD /* zTermUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zTermUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76EB39528E3CA510029A5BD /* zTermUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zTermUITests.swift; sourceTree = "<group>"; };
+		A76EB39728E3CA510029A5BD /* zTermUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zTermUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A76EB3B128E3E0C40029A5BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Terminal.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A76EB37328E3CA500029A5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76EB3A628E3CA900029A5BD /* SwiftTerm in Frameworks */,
+				A76EB3A828E3CA900029A5BD /* SwiftTermFuzz in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76EB38428E3CA510029A5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76EB38E28E3CA510029A5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A76EB36D28E3CA500029A5BD = {
+			isa = PBXGroup;
+			children = (
+				A76EB37828E3CA500029A5BD /* zTerm */,
+				A76EB38A28E3CA510029A5BD /* zTermTests */,
+				A76EB39428E3CA510029A5BD /* zTermUITests */,
+				A76EB37728E3CA500029A5BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A76EB37728E3CA500029A5BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A76EB37628E3CA500029A5BD /* zTerm.app */,
+				A76EB38728E3CA510029A5BD /* zTermTests.xctest */,
+				A76EB39128E3CA510029A5BD /* zTermUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A76EB37828E3CA500029A5BD /* zTerm */ = {
+			isa = PBXGroup;
+			children = (
+				A76EB3A928E3CBEE0029A5BD /* Terminal */,
+				A76EB37928E3CA500029A5BD /* AppDelegate.swift */,
+				A76EB37F28E3CA510029A5BD /* Main.storyboard */,
+				A76EB37D28E3CA510029A5BD /* Assets.xcassets */,
+				A76EB38228E3CA510029A5BD /* zTerm.entitlements */,
+			);
+			path = zTerm;
+			sourceTree = "<group>";
+		};
+		A76EB38A28E3CA510029A5BD /* zTermTests */ = {
+			isa = PBXGroup;
+			children = (
+				A76EB38B28E3CA510029A5BD /* zTermTests.swift */,
+			);
+			path = zTermTests;
+			sourceTree = "<group>";
+		};
+		A76EB39428E3CA510029A5BD /* zTermUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A76EB39528E3CA510029A5BD /* zTermUITests.swift */,
+				A76EB39728E3CA510029A5BD /* zTermUITestsLaunchTests.swift */,
+			);
+			path = zTermUITests;
+			sourceTree = "<group>";
+		};
+		A76EB3A928E3CBEE0029A5BD /* Terminal */ = {
+			isa = PBXGroup;
+			children = (
+				A76EB3B028E3E0C40029A5BD /* Terminal.storyboard */,
+				A76EB37B28E3CA500029A5BD /* TerminalVC.swift */,
+			);
+			path = Terminal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A76EB37528E3CA500029A5BD /* zTerm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76EB39B28E3CA510029A5BD /* Build configuration list for PBXNativeTarget "zTerm" */;
+			buildPhases = (
+				A76EB37228E3CA500029A5BD /* Sources */,
+				A76EB37328E3CA500029A5BD /* Frameworks */,
+				A76EB37428E3CA500029A5BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zTerm;
+			packageProductDependencies = (
+				A76EB3A528E3CA900029A5BD /* SwiftTerm */,
+				A76EB3A728E3CA900029A5BD /* SwiftTermFuzz */,
+			);
+			productName = zTerm;
+			productReference = A76EB37628E3CA500029A5BD /* zTerm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A76EB38628E3CA510029A5BD /* zTermTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76EB39E28E3CA510029A5BD /* Build configuration list for PBXNativeTarget "zTermTests" */;
+			buildPhases = (
+				A76EB38328E3CA510029A5BD /* Sources */,
+				A76EB38428E3CA510029A5BD /* Frameworks */,
+				A76EB38528E3CA510029A5BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A76EB38928E3CA510029A5BD /* PBXTargetDependency */,
+			);
+			name = zTermTests;
+			productName = zTermTests;
+			productReference = A76EB38728E3CA510029A5BD /* zTermTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A76EB39028E3CA510029A5BD /* zTermUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76EB3A128E3CA510029A5BD /* Build configuration list for PBXNativeTarget "zTermUITests" */;
+			buildPhases = (
+				A76EB38D28E3CA510029A5BD /* Sources */,
+				A76EB38E28E3CA510029A5BD /* Frameworks */,
+				A76EB38F28E3CA510029A5BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A76EB39328E3CA510029A5BD /* PBXTargetDependency */,
+			);
+			name = zTermUITests;
+			productName = zTermUITests;
+			productReference = A76EB39128E3CA510029A5BD /* zTermUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A76EB36E28E3CA500029A5BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A76EB37528E3CA500029A5BD = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					A76EB38628E3CA510029A5BD = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = A76EB37528E3CA500029A5BD;
+					};
+					A76EB39028E3CA510029A5BD = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = A76EB37528E3CA500029A5BD;
+					};
+				};
+			};
+			buildConfigurationList = A76EB37128E3CA500029A5BD /* Build configuration list for PBXProject "zTerm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A76EB36D28E3CA500029A5BD;
+			packageReferences = (
+				A76EB3A428E3CA900029A5BD /* XCRemoteSwiftPackageReference "SwiftTerm" */,
+			);
+			productRefGroup = A76EB37728E3CA500029A5BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A76EB37528E3CA500029A5BD /* zTerm */,
+				A76EB38628E3CA510029A5BD /* zTermTests */,
+				A76EB39028E3CA510029A5BD /* zTermUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A76EB37428E3CA500029A5BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76EB37E28E3CA510029A5BD /* Assets.xcassets in Resources */,
+				A76EB3B228E3E0C40029A5BD /* Terminal.storyboard in Resources */,
+				A76EB38128E3CA510029A5BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76EB38528E3CA510029A5BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76EB38F28E3CA510029A5BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A76EB37228E3CA500029A5BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76EB37C28E3CA500029A5BD /* TerminalVC.swift in Sources */,
+				A76EB37A28E3CA500029A5BD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76EB38328E3CA510029A5BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76EB38C28E3CA510029A5BD /* zTermTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76EB38D28E3CA510029A5BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76EB39628E3CA510029A5BD /* zTermUITests.swift in Sources */,
+				A76EB39828E3CA510029A5BD /* zTermUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A76EB38928E3CA510029A5BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A76EB37528E3CA500029A5BD /* zTerm */;
+			targetProxy = A76EB38828E3CA510029A5BD /* PBXContainerItemProxy */;
+		};
+		A76EB39328E3CA510029A5BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A76EB37528E3CA500029A5BD /* zTerm */;
+			targetProxy = A76EB39228E3CA510029A5BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A76EB37F28E3CA510029A5BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76EB38028E3CA510029A5BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A76EB3B028E3E0C40029A5BD /* Terminal.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76EB3B128E3E0C40029A5BD /* Base */,
+			);
+			name = Terminal.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A76EB39928E3CA510029A5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A76EB39A28E3CA510029A5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A76EB39C28E3CA510029A5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = zTerm/zTerm.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayrtonsoftware.zTerm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A76EB39D28E3CA510029A5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = zTerm/zTerm.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayrtonsoftware.zTerm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A76EB39F28E3CA510029A5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayrtonsoftware.zTermTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zTerm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/zTerm";
+			};
+			name = Debug;
+		};
+		A76EB3A028E3CA510029A5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayrtonsoftware.zTermTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zTerm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/zTerm";
+			};
+			name = Release;
+		};
+		A76EB3A228E3CA510029A5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayrtonsoftware.zTermUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = zTerm;
+			};
+			name = Debug;
+		};
+		A76EB3A328E3CA510029A5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayrtonsoftware.zTermUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = zTerm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A76EB37128E3CA500029A5BD /* Build configuration list for PBXProject "zTerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76EB39928E3CA510029A5BD /* Debug */,
+				A76EB39A28E3CA510029A5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76EB39B28E3CA510029A5BD /* Build configuration list for PBXNativeTarget "zTerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76EB39C28E3CA510029A5BD /* Debug */,
+				A76EB39D28E3CA510029A5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76EB39E28E3CA510029A5BD /* Build configuration list for PBXNativeTarget "zTermTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76EB39F28E3CA510029A5BD /* Debug */,
+				A76EB3A028E3CA510029A5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76EB3A128E3CA510029A5BD /* Build configuration list for PBXNativeTarget "zTermUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76EB3A228E3CA510029A5BD /* Debug */,
+				A76EB3A328E3CA510029A5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A76EB3A428E3CA900029A5BD /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/migueldeicaza/SwiftTerm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A76EB3A528E3CA900029A5BD /* SwiftTerm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A76EB3A428E3CA900029A5BD /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTerm;
+		};
+		A76EB3A728E3CA900029A5BD /* SwiftTermFuzz */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A76EB3A428E3CA900029A5BD /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTermFuzz;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A76EB36E28E3CA500029A5BD /* Project object */;
+}
